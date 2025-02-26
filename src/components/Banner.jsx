@@ -1,4 +1,7 @@
-
+import icon1 from '../assets/images/icons/1.png'
+import icon2 from '../assets/images/icons/2.png'
+import icon3 from '../assets/images/icons/3.png'
+import icon4 from '../assets/images/icons/4.png'
 const Banner = () => {
     return (
         <>
@@ -9,8 +12,27 @@ const Banner = () => {
                     <button className="rancho-regular p-2 bg-[#E3B577] text-[#242222] text-2xl hover:bg-[#F5F4F1] hover:text-slate-400 hover:shadow-md">Learn More</button>
                 </div>
             </div>
-            <div>
-
+            <div className="bg-[#ECEAE3] flex flex-col md:flex-row justify-center items-center md:gap-20 py-5 px-28 space-y-10 lg:space-y-0 md:py-10 md:px-52">
+                <div className='space-y-2'>
+                    <img src={icon1} alt="" />
+                    <h3 className='rancho-regular text-3xl'>Awesome Aroma</h3>
+                    <p className='raleway-font text-base'>You will definitely be a fan of the design & aroma of your coffee</p>
+                </div>
+                <div className='space-y-2'>
+                    <img src={icon2} alt="" />
+                    <h3 className='rancho-regular text-3xl'>High Quality</h3>
+                    <p className='raleway-font text-base'>We served the coffee to you maintaining the best quality</p>
+                </div>
+                <div className='space-y-2'>
+                    <img src={icon3} alt="" />
+                    <h3 className='rancho-regular text-3xl'>Pure Grades</h3>
+                    <p className='raleway-font text-base'>The coffee is made of the green coffee beans which you will love</p>
+                </div>
+                <div className='space-y-2'>
+                    <img src={icon4} alt="" />
+                    <h3 className='rancho-regular text-3xl'>Proper Roasting</h3>
+                    <p className='raleway-font text-base'>Your coffee is brewed by first roasting the green coffee beans</p>
+                </div>
             </div>
         </>
     );
