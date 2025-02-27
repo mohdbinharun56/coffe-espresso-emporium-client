@@ -8,16 +8,16 @@ const CoffeeCard = ({ coffee }) => {
             <div  className="">
                 <img src={photo} alt={`${name} coffee`}/>
             </div>
-            <div className="flex gap-10">
+            <div className="flex flex-col md:flex-row justify-between w-full">
                 <div className="space-y-2">
                     <h3 className="raleway-font md:text-xl"><span className="font-semibold">Name:</span> {name}</h3>
                     <p className="raleway-font md:text-xl"><span className="font-semibold">chef:</span> {chef}</p>
                     <p className="raleway-font md:text-xl"><span className="font-semibold">taste:</span> {taste}</p>
                 </div>
-                <div className="space-y-5">
-                    <p title="View" className="bg-[#D2B48C] hover:bg-[#e3ccad] text-white p-2 cursor-pointer"><FaRegEye/></p>
-                    <p title="Update" className="bg-[#3C393B] hover:bg-[#656164] text-white p-2 cursor-pointer"><MdEdit/></p>
-                    <p title="Delete" className="bg-[#EA4744] hover:bg-[#bb4f4d] text-white p-2 cursor-pointer"><MdDelete/></p>
+                <div className="flex flex-row md:flex-col items-center justify-center gap-2 mt-2 md:mt-0">
+                    <div title="View" className="bg-[#D2B48C] hover:bg-[#e3ccad] text-white p-2 cursor-pointer"><FaRegEye/></div>
+                    <div title="Update" className="bg-[#3C393B] hover:bg-[#656164] text-white p-2 cursor-pointer"><MdEdit/></div>
+                    <div title="Delete" className="bg-[#EA4744] hover:bg-[#bb4f4d] text-white p-2 cursor-pointer"><MdDelete/></div>
                 </div>
             </div>
         </div>
