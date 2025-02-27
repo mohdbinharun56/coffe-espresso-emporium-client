@@ -1,5 +1,6 @@
 import Banner from "../components/Banner";
 import icon4 from '../assets/images/more/4.png'
+import icon5 from '../assets/images/more/5.png'
 import { useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
 import CoffeeCard from "../components/CoffeeCard";
@@ -26,7 +27,7 @@ const Home = () => {
                 <div className="">
                     <img src={icon4} alt="" />
                 </div>
-                <div className="mx-auto lg:mx-0 border border-yellow-300">
+                <div className="mx-auto lg:mx-0">
                     <div className="text-center space-y-3">
                         <small className="text-xl raleway-font text-[#1B1A1A]">--- Sip & Savor ---</small>
                         <h1 className="rancho-regular text-[#331A15] text-2xl lg:text-5xl">Our Popular Products</h1>
@@ -39,6 +40,9 @@ const Home = () => {
                             coffees.map(coffee => <CoffeeCard key={coffee._id} coffee={coffee}></CoffeeCard>)
                         }
                     </div>
+                </div>
+                <div className="flex justify-end">
+                    <img src={icon5} alt="" />
                 </div>
             </div>
             {/* Cups coffee containeer */}
