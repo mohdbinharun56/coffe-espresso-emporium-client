@@ -1,7 +1,7 @@
 import Banner from "../components/Banner";
 import icon4 from '../assets/images/more/4.png'
 import icon5 from '../assets/images/more/5.png'
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
 import CoffeeCard from "../components/CoffeeCard";
 import cup1 from '../assets/images/cups/Rectangle 9.png'
@@ -31,7 +31,7 @@ const Home = () => {
                     <div className="text-center space-y-3">
                         <small className="text-xl raleway-font text-[#1B1A1A]">--- Sip & Savor ---</small>
                         <h1 className="rancho-regular text-[#331A15] text-2xl lg:text-5xl">Our Popular Products</h1>
-                        <button className="rancho-regular p-2 bg-[#E3B577] text-[#242222] text-2xl hover:bg-[#F5F4F1] hover:text-slate-400 hover:shadow-md">Add Coffee</button>
+                        <Link to='/coffees'><button className="rancho-regular p-2 bg-[#E3B577] text-[#242222] text-2xl hover:bg-[#F5F4F1] hover:text-slate-400 hover:shadow-md">Add Coffee</button></Link>
                     </div>
 
                     {/* card fetch all coffee from databse */}
@@ -50,7 +50,7 @@ const Home = () => {
             <div className="text-center space-y-3 my-20">
                 <small className="text-xl raleway-font text-[#1B1A1A]">Follow Us Now</small>
                 <h1 className="rancho-regular text-[#331A15] text-2xl lg:text-5xl">Follow on Instagram</h1>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 border border-yellow-400 max-w-5xl justify-center items-center mx-auto md:px-20 lg:px-0">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl justify-center items-center mx-auto md:px-20 lg:px-0">
                     <figure className="hover:border-2 hover:border-blue-500 hover:rounded-xl">
                         <img src={cup1} />
                     </figure>
