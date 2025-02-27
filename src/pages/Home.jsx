@@ -43,7 +43,7 @@ const Home = () => {
             </div>
             {/* Cups coffee containeer */}
             {/* Follow on Instagram */}
-            <div className="text-center space-y-3 mt-20">
+            <div className="text-center space-y-3 my-20">
                 <small className="text-xl raleway-font text-[#1B1A1A]">Follow Us Now</small>
                 <h1 className="rancho-regular text-[#331A15] text-2xl lg:text-5xl">Follow on Instagram</h1>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 border border-yellow-400 max-w-5xl justify-center items-center mx-auto md:px-20 lg:px-0">
