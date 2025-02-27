@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { Link, useLoaderData } from "react-router-dom";
 
 const ViewDetails = () => {
     const loadedCoffee = useLoaderData();
     // console.log(loadedCoffee);
+     useEffect(()=>{
+            document.title = "View coffee | Espresso"
+        },[])
     return (
         <div className="mb-20 max-w-5xl mx-auto">
             <div>

@@ -37,7 +37,7 @@ const Home = () => {
                     {/* card fetch all coffee from databse */}
                     <div className="grid lg:grid-cols-2 gap-10 mt-20 mx-5 md:mx-0 lg:mx-auto w-fit">
                         {
-                            coffees.map(coffee => <CoffeeCard key={coffee._id} coffee={coffee}></CoffeeCard>)
+                            coffees.map(coffee => <CoffeeCard key={coffee._id} coffee={coffee} setCoffees={setCoffees} coffees={coffees}></CoffeeCard>)
                         }
                     </div>
                 </div>
