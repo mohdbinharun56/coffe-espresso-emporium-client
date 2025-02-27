@@ -1,6 +1,7 @@
 import { FaRegEye } from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
+import { Link } from "react-router-dom";
 const CoffeeCard = ({ coffee }) => {
     const { _id, name, chef, taste, photo } = coffee;
     return (
@@ -15,7 +16,7 @@ const CoffeeCard = ({ coffee }) => {
                     <p className="raleway-font md:text-xl"><span className="font-semibold">taste:</span> {taste}</p>
                 </div>
                 <div className="flex flex-row md:flex-col items-center justify-center gap-2 mt-2 md:mt-0">
-                    <div title="View" className="bg-[#D2B48C] hover:bg-[#e3ccad] text-white p-2 cursor-pointer"><FaRegEye/></div>
+                    <Link to={`/coffee/${_id}`}><div title="View" className="bg-[#D2B48C] hover:bg-[#e3ccad] text-white p-2 cursor-pointer"><FaRegEye/></div></Link>
                     <div title="Update" className="bg-[#3C393B] hover:bg-[#656164] text-white p-2 cursor-pointer"><MdEdit/></div>
                     <div title="Delete" className="bg-[#EA4744] hover:bg-[#bb4f4d] text-white p-2 cursor-pointer"><MdDelete/></div>
                 </div>
